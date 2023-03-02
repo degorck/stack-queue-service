@@ -45,14 +45,14 @@ public class UserStackServiceImplTest {
     @Test
     public void testGetUserQueue() {
         UserDto user1 = new UserDto();
-        user1.setName("John");
-        user1.setPet("Cat");
+        user1.setName("Diego");
+        user1.setPet("Gato");
         UserDto user2 = new UserDto();
-        user2.setName("Jane");
-        user2.setPet("Dog");
+        user2.setName("Mabel");
+        user2.setPet("Perro");
         UserDto user3 = new UserDto();
-        user3.setName("Jim");
-        user3.setPet("Fish");
+        user3.setName("Maggie");
+        user3.setPet("Pez");
         userStackService.addUserToStack(user1);
         userStackService.addUserToStack(user2);
         userStackService.addUserToStack(user3);
