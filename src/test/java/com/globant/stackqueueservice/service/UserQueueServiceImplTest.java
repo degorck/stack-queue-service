@@ -35,8 +35,8 @@ public class UserQueueServiceImplTest {
     @Test
     public void testAddUserToQueue() {
         UserDto user = new UserDto();
-        user.setName("John");
-        user.setPet("Cat");
+        user.setName("Diego");
+        user.setPet("Gato");
         UserDto result = userQueueService.addUserToQueue(user);
         verify(serviceUtils, times(1)).saveOperation(user);
         assertEquals(user, result);
@@ -45,14 +45,14 @@ public class UserQueueServiceImplTest {
     @Test
     public void testGetUserQueue() {
         UserDto user1 = new UserDto();
-        user1.setName("John");
-        user1.setPet("Cat");
+        user1.setName("Diego");
+        user1.setPet("Gato");
         UserDto user2 = new UserDto();
-        user2.setName("Jane");
-        user2.setPet("Dog");
+        user2.setName("Mabel");
+        user2.setPet("Perro");
         UserDto user3 = new UserDto();
-        user3.setName("Jim");
-        user3.setPet("Fish");
+        user3.setName("Maggie");
+        user3.setPet("Pez");
         userQueueService.addUserToQueue(user1);
         userQueueService.addUserToQueue(user2);
         userQueueService.addUserToQueue(user3);
